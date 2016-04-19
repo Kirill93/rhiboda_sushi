@@ -1,0 +1,580 @@
+@font-face {
+	font-family: 'BlissProRegular';
+	src: url('../fonts/BlissPro.eot');
+	src: url('../fonts/BlissPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro.woff2') format('woff2'),
+		url('../fonts/BlissPro.woff') format('woff'),
+		url('../fonts/BlissPro.ttf') format('truetype'),
+		url('../fonts/BlissPro.svg#BlissPro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BlissProLight';
+	src: url('../fonts/BlissPro-Light.eot');
+	src: url('../fonts/BlissPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-Light.woff2') format('woff2'),
+		url('../fonts/BlissPro-Light.woff') format('woff'),
+		url('../fonts/BlissPro-Light.ttf') format('truetype'),
+		url('../fonts/BlissPro-Light.svg#BlissPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BlissProHeavy';
+	src: url('../fonts/BlissPro-Heavy.eot');
+	src: url('../fonts/BlissPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-Heavy.woff2') format('woff2'),
+		url('../fonts/BlissPro-Heavy.woff') format('woff'),
+		url('../fonts/BlissPro-Heavy.ttf') format('truetype'),
+		url('../fonts/BlissPro-Heavy.svg#BlissPro-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BlissProExtraBold';
+	src: url('../fonts/BlissPro-ExtraBold.eot');
+	src: url('../fonts/BlissPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-ExtraBold.woff2') format('woff2'),
+		url('../fonts/BlissPro-ExtraBold.woff') format('woff'),
+		url('../fonts/BlissPro-ExtraBold.ttf') format('truetype'),
+		url('../fonts/BlissPro-ExtraBold.svg#BlissPro-ExtraBold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BlissProBold';
+	src: url('../fonts/BlissPro-Bold.eot');
+	src: url('../fonts/BlissPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-Bold.woff2') format('woff2'),
+		url('../fonts/BlissPro-Bold.woff') format('woff'),
+		url('../fonts/BlissPro-Bold.ttf') format('truetype'),
+		url('../fonts/BlissPro-Bold.svg#BlissPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+* {font-family: 'BlissProLight';}
+img {max-width: 100%;}
+
+/*help-classes*/
+.border-l {border-left: 1px solid #000;}
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}
+:-moz-placeholder           {color:#000;} 
+:-ms-input-placeholder      {color:#000;}
+.dark-pink {background: #d10d3c;}
+.dark-yellow {background: #dcc105;}
+.orange {background: #eb5a0b;}
+.green {background: #6fcc25;}
+.red {background: #e30313;}
+.dark-orange {background: #dc5711;}
+.yellow {background: #e0d90b;}
+.pink {background: #ff006c;}
+.margin-row {margin-top: 38px;}
+.padding-block-food {padding-bottom: 8px;}
+.padding-block-food-top {padding-top: 8px;}
+.wrap-sets {
+    padding: 4px;
+    border: 2px solid #d10d3c;
+}
+.wrap-rols {
+    padding: 4px;
+    border: 2px solid #dcc105;
+}
+.wrap-pizza {
+    padding: 4px;
+    border: 2px solid #eb5a0b;
+}
+.wrap-snacks {
+    padding: 4px;
+    border: 2px solid #6fcc25;
+}
+.wrap-salads {
+    padding: 4px;
+    border: 2px solid #e30313;
+}
+.wrap-soups {
+    padding: 4px;
+    border: 2px solid #dc5711;
+}
+.wrap-hots {
+    padding: 4px;
+    border: 2px solid #e0d90b;
+}
+.wrap-dessert {
+    padding: 4px;
+    border: 2px solid #ff006c;
+}
+/*------------*/
+
+body {
+    background: url('../img/bg.jpg') no-repeat center top;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+header {margin-bottom: 54px;}
+
+.header-panel {
+    background: #fff;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    min-height: 35px;
+}
+
+.back-call {
+    background: url('../img/phone.png') no-repeat;
+    height: 12px;
+    line-height: 12px;
+    padding-left: 45px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.back-call a,
+.back-call a:hover,
+.back-call a:focus,
+.back-call a:active {
+    font-family: 'BlissProRegular';
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.order-time {
+    background: url('../img/clock.png') no-repeat;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 34px;
+    color: #000000;
+    margin-top: 4px;
+}
+
+.header-cart {min-height: 101px;}
+
+.logo {
+    margin-top: 27px;
+    margin-left: 33px;
+}
+
+.phone {
+    font-family: 'BlissProExtraBold';
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    background-image: -webkit-linear-gradient(#fff, #cecdce);
+    background-image: -o-linear-gradient(transparent, transparent);
+    line-height: 1.1em;
+    margin-top: 18px;
+}
+
+.null {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(#982156, #861748);
+    background-image: -o-linear-gradient(transparent, transparent);
+    position: relative;
+    -webkit-animation: anim 1s infinite;
+    animation: anim 1s infinite;
+}
+ 
+@-webkit-keyframes anim {
+    0%   {top: 0px;}
+    50%   {top: -8px;}
+    100% {top: 0px;}
+}
+
+@keyframes anim {
+    0%   {top: 0px;}
+    50%   {top: -8px;}
+    100% {top: 0px;}
+}
+
+.adress {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.city {
+    display: block;
+    margin-top: 5px;
+}
+
+.cart {
+    min-height: 80px;
+    border: 1px dashed #fff;
+    margin-top: 8px;
+}
+
+.img-cart {
+    margin-top: 21px;
+    margin-left: 27px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.vertical-line {
+    width: 1px;
+    min-height: 60px;
+    border: 1px dashed #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 23px;
+    margin-right: 32px;
+}
+
+.cart-text {
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-family: 'BlissProBold';
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.menu {
+    min-height: 44px;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.menu ul li {
+    float: left;
+    padding: 12px 23px;
+    border-right: 1px solid #000;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: #000;
+    font-family: 'BlissProBold';
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.search {min-height: 38px;}
+
+.search {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #010000;
+    padding-left: 31px;
+    margin-top: 4px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+
+.search-button {
+    background: url('../img/search.png') no-repeat;
+    width: 20px;
+    height: 21px;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    outline: none;
+}
+
+.sliderr {
+    position: relative;
+    border: 4px solid #fff;
+    border-radius: 4px;
+}
+
+.slider {margin-bottom: 60px;}
+
+.stiker {
+    position: absolute;
+    top: -4px;
+    right: 43px;
+    z-index: 1;
+}
+
+ol.redefine-carousel-indicators {
+    text-align: left;
+    left: 0;
+    padding-left: 0;
+    margin-left: 30px;
+}
+
+.name,
+.price {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'BlissProHeavy';
+    color: #ffffff;
+    display: block;
+    line-height: 1.1em;
+}
+
+.price a,
+.price a:hover,
+.price a:active,
+.price a:focus {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'BlissProRegular';
+    padding: 11px 16px;
+    border: 1px solid #fff;
+}
+
+div.redefine-carousel-caption {
+    left: 0px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.block-food {
+    width: 100%;
+    text-align: center;
+}
+
+.name-food {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'BlissProBold';
+    line-height: 1.1em;
+}
+
+.novelty,
+.social-networks {margin-top: 60px;}
+
+.wrap-nov {
+    background: url('../img/bg_nov.jpg') no-repeat center top;
+    height: 288px;
+    border: 5px solid #fff;
+}
+
+.wrap-even {
+    background: url('../img/events.jpg') no-repeat center top;
+    height: 288px;
+    border: 5px solid #fff;
+}
+
+.block-text {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-top: 6px solid #851748;
+    text-align: center;
+    margin-top: 155px;
+}
+
+.block-text-e {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-top: 6px solid #851748;
+    text-align: center;
+    margin-top: 155px;
+}
+
+.block-text a,
+.block-text a:hover,
+.block-text a:active,
+.block-text a:focus {
+    font-size: 30px;
+    font-weight: 300;
+    color: #851748;
+    text-decoration: none;
+}
+
+.block-text-e a,
+.block-text-e a:hover,
+.block-text-e a:active,
+.block-text-e a:focus {
+    font-size: 30px;
+    font-weight: 300;
+    color: #242827;
+    text-decoration: none;
+}
+
+.vk-subscribe {
+    background: url('../img/vk-s.png') no-repeat;
+    height: 68px;
+    padding-left: 84px;
+}
+
+.ok-subscribe {
+    background: url('../img/ok-s.png') no-repeat;
+    height: 67px;
+    padding-left: 84px;
+}
+
+.inst-subscribe {
+    background: url('../img/inst-s.png') no-repeat;
+    height: 68px;
+    padding-left: 84px;
+}
+
+.sun,
+.like-e,
+.subscribe {
+    display: block;
+    color: #ffffff;
+    line-height: 1.1em;
+}
+
+.sun {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'BlissProBold';
+}
+
+.like-e {
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.subscribe {padding-top: 5px;}
+
+.subscribe a,
+.subscribe a:hover,
+.subscribe a:focus,
+.subscribe a:active {
+    color: inherit;
+    text-decoration: underline;
+    font-size: 18px;
+    font-size: 15px;
+}
+
+span.sun--font {font-size: 22px;}
+
+footer {
+    margin-top: 65px;
+    background: #fff;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.social-icons a img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.name-text {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 300;
+    font-family: 'BlissProLight';
+    text-align: center;
+    display: block;
+    margin-top: 6px;
+}
+
+.phone-org {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'BlissProBold';
+    display: block;
+    margin-top: 6px;
+}
+
+.call-f {
+    background: url('../img/phone1.png') no-repeat;
+    height: 40px;
+}
+
+.call-f div {padding-left: 53px;}
+
+.call-f div a,
+.call-f div a:hover,
+.call-f div a:focus,
+.call-f div a:active {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.bold-text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'BlissProBold';
+}
+
+.text-f {
+    margin-top: 21px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.items-menu {
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    padding-bottom: 20px;
+}
+
+div.items-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+div.items-menu ul li {
+    display: block;
+    float: none;
+    border: 0;
+}
+
+
+/*adaptive-styles*/
+@media screen and (max-width: 1024px) {
+    .vertical-line {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .cart-text {
+        font-size: 12px;
+        margin-top: 24px;
+    }
+    
+    .phone {font-size: 28px;}
+    
+    .phone-org {font-size: 25px;}
+    
+    .search-button {left: 40px;}
+}
+/*-----------------*/
+
