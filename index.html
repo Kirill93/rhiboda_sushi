@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-2.2.2.min.js
 "></script>
    <script src="js/bootstrap.min.js"></script>
@@ -31,22 +31,22 @@
         <div class="header-cart">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="logo"><img src="img/logo.png" alt=""></div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="phone">
                             363-<span class="null">0</span>-777<br/>
                             8-913-918-0202
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="adress">
                             Академгородок, ОбьГЭС,<br/>ВАСХНИЛ
                             <span class="city">Бердск, Искитим</span>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="cart">
                             <div class="img-cart"><a href="#"><img src="img/cart.png" alt=""></a></div>
                             <div class="vertical-line"></div>
@@ -61,16 +61,22 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="menu">
-                   <div class="col-md-7">
-                    <ul>
-                        <li><a href="#">Ресторан</a></li>
-                        <li><a href="#" class="display-menu">Меню</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                    </ul>
-                    <div class="items-menu">
-                        <ul>
+                <nav class="navbar navbar-default header-menu">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">Ресторан <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Меню <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
                             <li><a href="#">СЕТЫ</a></li>
                             <li><a href="#">РОЛЛЫ</a></li>
                             <li><a href="#">ПИЦЦА</a></li>
@@ -79,18 +85,23 @@
                             <li><a href="#">СУПЫ</a></li>
                             <li><a href="#">ГОРЯЧЕЕ</a></li>
                             <li><a href="#">ДЕСЕРТЫ</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                    <div class="col-md-4 col-md-offset-1 border-l">
-                        <div class="search-food">
-                            <form action="">
-                                <input type="text" placeholder="Введите название блюда" class="search">
-                                <input type="submit" value="" class="search-button">
-                            </form>
+                          </ul>
+                        </li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav form-nav form-nav--width">
+                        <li>
+                      <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control placeholder--color" placeholder="Введите название блюда">
                         </div>
+                      </form>
+                    </li>
+                    </ul>
                     </div>
-                </div>
+                  </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -130,7 +141,7 @@
 <div class="food-menu">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-sets">
                 <div class="block-food dark-pink padding-block-food">
                     <span class="name-food">СЕТЫ</span>
@@ -138,7 +149,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-rols">
                 <div class="block-food dark-yellow padding-block-food">
                     <span class="name-food">РОЛЛЫ</span>
@@ -146,7 +157,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-pizza">
                 <div class="block-food orange padding-block-food">
                     <span class="name-food">ПИЦЦА</span>
@@ -154,7 +165,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-snacks">
                 <div class="block-food green padding-block-food">
                     <span class="name-food">ЗАКУСКИ</span>
@@ -164,7 +175,7 @@
             </div>
         </div>
         <div class="row margin-row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-salads">
                 <div class="block-food red padding-block-food-top">
                     <a href="#"><img src="img/salads.jpg" alt=""></a>
@@ -172,7 +183,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-soups">
                 <div class="block-food dark-orange padding-block-food-top">
                     <a href="#"><img src="img/soups.jpg" alt=""></a>
@@ -180,7 +191,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-hots">
                 <div class="block-food yellow padding-block-food-top">
                     <a href="#"><img src="img/hots.jpg" alt=""></a>
@@ -188,7 +199,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                <div class="wrap-dessert">
                 <div class="block-food pink padding-block-food-top">
                     <a href="#"><img src="img/dessert.jpg" alt=""></a>
@@ -264,17 +275,36 @@
                 </div>
             </div>
         </div>
-        <div class="text-f">
-         <div class="container">
           <div class="row">
            <div class="col-md-12">
+             <div class="text-f">
             Телефон горячей линии: <span class="bold-text">0000 - 000 </span> Ваши предложения и пожелания принимает менеджер.<br/>
             Суши и роллы - настоящая находка для гурманов, тем более, что у жителей Академгородка, ОбьГЭС, Бердска, Искитима и Кольцово существует уникальная возможность сделать заказ превосходных суши не покидая прелелов офиса и дома! Бесплатная доставка суши в Академгородке, Бердске, Искитиме и Кольцово - быстрая и очень удобная услуга.
+          </div>
             </div>
             </div>
-            </div>
-        </div>
         </footer>
     </div>
+    <script>
+
+    $(document).ready(function(){
+      $(".wrap-nov, .wrap-even").css({"background-size":"100%"})
+        $('.wrap-nov, .wrap-even').mouseenter(function(e) {
+            $(this).animate({
+                "background-size":"120%"
+            }, 1000 );
+        }).mouseleave(function(e) {
+            $(this).animate({
+                "background-size":"100%"
+            }, 1000 );
+        });
+        $('input,textarea').focus(function(){
+          $(this).data('placeholder',$(this).attr('placeholder')).attr('placeholder','');
+        }).blur(function(){
+          $(this).attr('placeholder',$(this).data('placeholder'));
+        });
+    });
+
+    </script>
 </body>
 </html>
