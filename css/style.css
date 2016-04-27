@@ -183,9 +183,13 @@ header {margin-bottom: 54px;}
 
 .null {
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     background-image: -webkit-linear-gradient(#982156, #861748);
+    background-image: -moz-linear-gradient(#982156, #861748);
     background-image: -o-linear-gradient(transparent, transparent);
+    background-image: -moz-linear-gradient(transparent, transparent);
     position: relative;
     -webkit-animation: anim 1s infinite;
     animation: anim 1s infinite;
@@ -466,9 +470,10 @@ div.redefine-carousel-caption {
 }
 
 .like-e {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 15px;
     padding-top: 5px;
+    color: #ff4242;
 }
 
 .subscribe {padding-top: 5px;}
@@ -547,8 +552,8 @@ footer {
     font-size: 14px;
     color: #000000;
     font-weight: 300;
-		padding-left: 20px;
-		padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .items-menu {
@@ -632,6 +637,10 @@ nav.header-menu {
 }
 
 .food-menu .col-md-3 {margin-bottom: 15px;}
+
+.header-menu .form-nav--width li {border-right: 0;}
+
+.header-menu .navbar-collapse {padding-left: 0;}
 
 
 /*adaptive-styles*/
